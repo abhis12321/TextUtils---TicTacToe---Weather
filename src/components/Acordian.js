@@ -1,6 +1,8 @@
-// import { useState } from 'react'
+import React from 'react'
 
 export default function Acordian(props) {
+  document.title = "Accordian";
+
   return (
     <>
       <div className="accordion" id="accordionPanelsStayOpenExample">

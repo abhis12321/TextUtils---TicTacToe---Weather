@@ -1,9 +1,11 @@
 import React from 'react'
+import Weather from './weather/weat'
 
-export default function contact() {
+export default function Contact() {
+  document.title = "Weather";
   return (
     <div>
-      <h1>Contact</h1>
+      <Weather/>
     </div>
   )
 }

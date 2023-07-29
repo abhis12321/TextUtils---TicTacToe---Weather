@@ -1,0 +1,7 @@
+.toggle div {
+    margin: 2px;
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}

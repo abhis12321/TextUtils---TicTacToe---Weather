@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import './style/Nav.css'
 
 export default function NAV(props) {
   return (
@@ -26,12 +27,12 @@ export default function NAV(props) {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">
-                  Home
+                  TicTacToe
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">
-                  About
+                  Weather
                 </Link>
               </li>
               <li className="nav-item dropdown">
@@ -47,19 +48,19 @@ export default function NAV(props) {
                 <ul className="dropdown-menu">
                   <li>
                     <Link className="dropdown-item" to="/accordian">
-                      Action
+                      Accordians
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/blog">
-                      Another action
+                      Dragging
                     </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/">
+                    <Link className="dropdown-item" to="/temp">
                       Something else here
                     </Link>
                   </li>
@@ -72,7 +73,22 @@ export default function NAV(props) {
               </li>
             </ul>
 
-            <div className="form-check form-switch">
+            <div className="toggle" style={{display:'flex'}}>
+              <div onClick={()=>{props.toggleMode('light')}} style = {{backgroundColor:'rgb(232 221 221)'}}></div>
+              
+              <div onClick={()=>{props.toggleMode('danger')}} style = {{backgroundColor:'red'}}></div>
+
+              <div onClick={()=>{props.toggleMode('success')}} style = {{backgroundColor:'green'}}></div>
+
+              <div onClick={()=>{props.toggleMode('primary')}} style = {{backgroundColor:'blue'}}></div>
+
+              <div onClick={()=>{props.toggleMode('dark')}} style = {{backgroundColor:'black'}}></div>
+
+              <div onClick={()=>{props.toggleMode('warning')}} style = {{backgroundColor:'rgb(255 178 11)'}}></div>
+              
+            </div>
+
+            {/* <div className="form-check form-switch">
               <input
                 onClick={props.toggleMode}
                 className="form-check-input"
@@ -87,7 +103,7 @@ export default function NAV(props) {
               >
                 Enable Dark Mode
               </label>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>

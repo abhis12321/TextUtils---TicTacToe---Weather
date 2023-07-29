@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Tic from './tic/Tic.js'
 
-export default function home() {
+export default function Home(props) {
+  document.title = "Tic Tac Toe";
   return (
     <div>
-      <h1>Home</h1>
+      <Tic mode={props.mode}/>
     </div>
   )
 }

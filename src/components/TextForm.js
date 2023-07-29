@@ -38,8 +38,9 @@ export default function TextForm(props) {
         <h1>Enter the text to Analyze</h1>
         <textarea
           style={{
+            borderWidth:'3px',
             backgroundColor:
-              props.mode === "dark" ? "rgb(29, 26, 26)" : "white",
+              props.mode === "dark" ? "rgb(29, 26, 26)" : "#e7e3e3" ,
             color: props.mode === "dark" ? "white" : "black",
           }}
           className="form-control my-3"
@@ -70,7 +71,7 @@ export default function TextForm(props) {
       </div>
       <div className="container my3">
         <p>
-          words = {text.split(" ").length} , characters = {text.length}
+          words = {text.split(" ").filter((word)=>{return word.length > 0;}).length} , characters = {text.length}
         </p>
       </div>
       <div className="container my-3">
