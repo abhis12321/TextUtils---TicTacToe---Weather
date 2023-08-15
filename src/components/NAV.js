@@ -31,7 +31,7 @@ export default function NAV(props) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" to="/weather">
                   Weather
                 </Link>
               </li>
@@ -53,7 +53,7 @@ export default function NAV(props) {
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/blog">
-                      Dragging
+                      Drag & mirror
                     </Link>
                   </li>
                   <li>
@@ -61,7 +61,7 @@ export default function NAV(props) {
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/temp">
-                      Something else here
+                      Temperatur Converter
                     </Link>
                   </li>
                 </ul>
