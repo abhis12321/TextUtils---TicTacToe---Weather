@@ -55,7 +55,7 @@ export default function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/TextUtils---TicTacToe---Weather'>
         <Nav
           title="TextUtils"
           mode={mode}
