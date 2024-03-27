@@ -1,8 +1,9 @@
+import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import './style/Nav.css'
 
-export default function NAV(props) {
+function NAV(props) {
   return (
     <>
       <nav
@@ -132,3 +133,6 @@ NAV.defaultProps = {
   title: "Title",
   about: "About",
 };
+
+
+export default React.memo(NAV);

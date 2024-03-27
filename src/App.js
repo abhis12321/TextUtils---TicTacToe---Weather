@@ -74,7 +74,7 @@ export default function App() {
         {/* <a href={document.URL}> click on me {document.URL}</a> */}
         {/* <a href={song} download> click on me to download</a> */}
         <Routes>
-          <Route path="/" element={<TicTacToe mode = {mode}/>}></Route>
+          <Route path="/" element={<TicTacToe mode = {mode}/>} />
 
           <Route path="/weather" element={<Weather mode = {mode}/>}></Route>
 
@@ -105,6 +105,3 @@ export default function App() {
     </>
   );
 }
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(<App />);
